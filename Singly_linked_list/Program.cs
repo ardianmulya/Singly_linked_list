@@ -64,6 +64,10 @@ namespace Singly_linked_list
             newnode.next = current;
             previous.next = newnode;
         }
+        public bool delNode (int rollNo)
+        {
+
+        }
     }
     class Program
     {
