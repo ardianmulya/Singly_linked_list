@@ -104,7 +104,10 @@ namespace Singly_linked_list
         }
         public bool ListEmpty()
         {
-
+            if (START == null)
+                return true;
+            else
+                return false;
         }
     }
     class Program
