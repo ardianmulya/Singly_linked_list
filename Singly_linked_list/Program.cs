@@ -32,6 +32,14 @@ namespace Singly_linked_list
             Node newnode = new Node();
             newnode.rollNumber = rollNo;
             newnode.name = nm;
+            if (START != null || rollNo <= START.rollNumber)
+            {
+                if ((START != null) &&(rollNo == START.rollNumber))
+                {
+
+                }
+
+            }
         }
     }
     class Program
