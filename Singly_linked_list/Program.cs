@@ -10,6 +10,11 @@ namespace Singly_linked_list
     {
 
     }
+
+    class List
+    {
+
+    }
     class Program
     {
         static void Main(string[] args)
