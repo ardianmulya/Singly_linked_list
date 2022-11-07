@@ -32,13 +32,17 @@ namespace Singly_linked_list
             Node newnode = new Node();
             newnode.rollNumber = rollNo;
             newnode.name = nm;
+            // if the node to be interested is the firts node
             if (START != null || rollNo <= START.rollNumber)
             {
                 if ((START != null) &&(rollNo == START.rollNumber))
                 {
-
+                    Console.WriteLine();
+                    return;
                 }
-
+                newnode.next = START;
+                START = newnode;
+                return;
             }
         }
     }
