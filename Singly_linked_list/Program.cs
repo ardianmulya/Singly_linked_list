@@ -89,6 +89,11 @@ namespace Singly_linked_list
             else
                 return true;
         }
+        public void Traverse()
+        {
+
+        }
+
     }
     class Program
     {
