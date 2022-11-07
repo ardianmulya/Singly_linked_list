@@ -66,7 +66,14 @@ namespace Singly_linked_list
         }
         public bool delNode (int rollNo)
         {
-
+            Node previous, current;
+            previous = current = null;
+            if (search(rollNo, ref previous, ref current) == false)
+                return false;
+            previous.next = current.next;
+                if (current==START)
+                    START = START.next;
+            return = true;
         }
     }
     class Program
