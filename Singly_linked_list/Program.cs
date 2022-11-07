@@ -92,11 +92,14 @@ namespace Singly_linked_list
         public void Traverse()
         {
             if (ListEmpty())
-                Console.WriteLine();
+                Console.WriteLine("\nThe records in the list are: ");
             else
             {
+                Console.WriteLine("\nThe records in the list are: ");
+                Node currentNode;
+                for (currentNode = START; currentNode != null; currentNode = currentNode.next)
+                    Console.Write(currentNode.rollNumber + "" + currentNode.name + "\n");
                 Console.WriteLine();
-                Node currentnode;
             }
         }
         public bool ListEmpty()
