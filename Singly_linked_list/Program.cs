@@ -73,11 +73,21 @@ namespace Singly_linked_list
             previous.next = current.next;
                 if (current==START)
                     START = START.next;
-            return = true;
+            return true;
         }
         public bool search(int rollNo,ref Node previous, ref Node current)
         {
-
+            previous = START;
+            current = START;
+            while ((current != null) && (rollNo != current.rollNumber))
+            {
+                previous = current;
+                current = current.next;
+            }
+            if (current == null)
+                return false;
+            else
+                return true;
         }
     }
     class Program
