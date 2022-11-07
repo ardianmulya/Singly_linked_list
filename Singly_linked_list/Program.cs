@@ -91,7 +91,13 @@ namespace Singly_linked_list
         }
         public void Traverse()
         {
-
+            if (ListEmpty())
+                Console.WriteLine();
+            else
+            {
+                Console.WriteLine();
+                Node currentnode;
+            }
         }
         public bool ListEmpty()
         {
