@@ -93,7 +93,10 @@ namespace Singly_linked_list
         {
 
         }
+        public bool ListEmpty()
+        {
 
+        }
     }
     class Program
     {
